@@ -14,7 +14,7 @@
   }
   
   function findBold(text) {
-    var b = text.match(/\*.*\*/g);
+    var b = text.match(/\*\w*\*/g)
     return b;
   }
   
