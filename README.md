@@ -20,9 +20,12 @@
     var i = text.match(/_\w*_/g);
     return i;
   }
-  // Replace more than one space with a single space
-  // .replace(/ +/g, ' ');
-
-  // Replace more than two return characters with two return characters
-  // .replace(/\n\n\n+/g, '\n\n');
+  
+  function clearExtraSpaces(text) {
+    return text.replace(/ +/g, ' ');
+  }
+  
+  function clearExtraReturns(text) {
+    return text.replace(/\n\n\n+/g, '\n\n');
+  }
 ```
