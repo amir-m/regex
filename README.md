@@ -19,7 +19,7 @@
   }
   
   function findItalic(text) {
-    var i = text.match(/^_\s*\w.*_$/g);
+    var i = text.match(/_\w*_/g);
     return i;
   }
 ```
